@@ -3,7 +3,7 @@ node_js:
   - "node"
 before_deploy: npm install -g now
 deploy:
-   - provider: script
+  - provider: script
     script: bash scripts/deploy_review_app.sh
     skip_cleanup: true
     on:
